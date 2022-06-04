@@ -12,7 +12,8 @@
       </div>
     </div>
     <div class="text">
-      Fakka G
+      <h1>Fakka G</h1>
+      <p>Lorem ipsum dipsum</p>
     </div>
   </div>
 </template>
@@ -27,6 +28,8 @@
 .animation[data-hidden="true"] svg { @apply hidden; }
 svg.smaller { @apply w-16 h-16 <sm:w-11 <sm:h-11; }
 svg.medium { @apply pt-6 px-3; }
+
+.text > h1 { @apply text-3xl; }
 </style>
 
 <script>
@@ -53,6 +56,25 @@ export default {
 
       const rand = (min, max) => (Math.random() * (max - min)) + min
 
+      const textAnims = [
+        anime({
+          targets: '.text > h1',
+          duration: '1000',
+          autoplay: false,
+          opacity: ['0', '1'],
+          translateY: ['-.5rem', '0'],
+          easing: 'easeInQuint'
+        }),
+        anime({
+          targets: '.text > p',
+          duration: '1000',
+          autoplay: false,
+          opacity: ['0', '1'],
+          easing: 'easeInQuint',
+          delay: 200
+        })
+      ]
+
       elements.forEach((el, index) =>
       {
         const entry = list[index]
@@ -67,9 +89,15 @@ export default {
           top: [ `${entry.startY}%`, `${entry.endY}%` ],
           rotate: [ `${entry.startRotation}`, `${entry.endRotation}` ],
           delay: index * 200,
-          easing: 'easeInOutQuint'
+          easing: 'easeInOutQuint',
         })
       })
+
+      setTimeout(() =>
+      {
+        textAnims.forEach(anim => anim.play())
+      },
+      1500 + elements.length * 100)
     }
   }
 }
