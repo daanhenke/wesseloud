@@ -1,0 +1,22 @@
+html, body, #__nuxt, #__layout, .layout { @apply flex flex-col min-h-screen; }
+.layout { @apply bg-dark-300 text-white font-default; }
+
+@font-face {
+  font-family: 'Graphik Regular';
+  src: url(/fonts/GraphikRegular.otf);
+}
+
+@font-face {
+  font-family: 'Graphik Light';
+  src: url(/fonts/GraphikLight.otf);
+}
+
+@font-face {
+  font-family: 'Graphik Medium';
+  src: url(/fonts/GraphikMedium.otf);
+}
+
+@font-face {
+  font-family: 'Graphik Semibold';
+  src: url(/fonts/GraphikSemibold.otf);
+}

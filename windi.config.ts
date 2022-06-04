@@ -6,4 +6,11 @@ export default defineConfig({
    * @see https://windicss.org/features/attributify.html
    */
   attributify: true,
+  theme: {
+    extend: {
+      fontFamily: {
+        default: ['Graphik Regular', 'Segoe UI']
+      }
+    }
+  }
 })

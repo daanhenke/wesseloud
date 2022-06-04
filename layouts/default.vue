@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="layout">
         <h1>
-            Fakka G
+
         </h1>
         <div>
             <Nuxt />

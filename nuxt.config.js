@@ -19,6 +19,7 @@ export default {
   },
 
   css: [
+    '~/assets/css/main.css'
   ],
 
   plugins: [
@@ -28,6 +29,7 @@ export default {
 
   buildModules: [
     'nuxt-windicss',
+    '@nuxtjs/google-fonts'
   ],
 
   modules: [
@@ -38,6 +40,12 @@ export default {
   pwa: {
     manifest: {
       lang: 'en'
+    }
+  },
+
+  googleFonts: {
+    families: {
+      Helvatica: true
     }
   },
 
