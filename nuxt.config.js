@@ -1,6 +1,10 @@
 export default {
   target: 'static',
 
+  server: {
+    host: '0.0.0.0'
+  },
+
   head: {
     title: 'wesseloud',
     meta: [
@@ -29,7 +33,8 @@ export default {
 
   buildModules: [
     'nuxt-windicss',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/svg-sprite'
   ],
 
   modules: [

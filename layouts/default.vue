@@ -1,10 +1,13 @@
 <template>
     <div class="layout">
-        <h1>
-
-        </h1>
-        <div>
+        <layout-header />
+        <div class="content">
             <Nuxt />
         </div>
     </div>
 </template>
+
+<style scoped>
+  .layout { @apply flex flex-col; }
+  .content { @apply flex flex-col; }
+</style>

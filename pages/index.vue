@@ -1,7 +1,6 @@
 <template>
   <div>
-    home page
-    <nuxt-content :document="meme" />
+    <section-hero />
   </div>
 </template>
 
@@ -14,7 +13,7 @@ export default {
   },
 
   async fetch() {
-    this.meme = await this.$content('hello').fetch()
+    //this.meme = await this.$content('hello').fetch()
   }
 }
 </script>
