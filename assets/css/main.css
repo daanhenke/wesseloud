@@ -1,23 +1,27 @@
 html, body, #__nuxt, #__layout, .layout { @apply flex flex-col min-h-screen; }
-.layout { @apply font-default; }
+.layout { @apply font-default font-light; }
 
 /* Non Google Fonts */
 @font-face {
-  font-family: 'Graphik Regular';
-  src: url(/fonts/GraphikRegular.otf);
-}
-
-@font-face {
-  font-family: 'Graphik Light';
+  font-family: 'Graphik';
+  font-weight: 300;
   src: url(/fonts/GraphikLight.otf);
 }
 
 @font-face {
-  font-family: 'Graphik Medium';
+  font-family: 'Graphik';
+  font-weight: 400;
+  src: url(/fonts/GraphikRegular.otf);
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-weight: 500;
   src: url(/fonts/GraphikMedium.otf);
 }
 
 @font-face {
-  font-family: 'Graphik Semibold';
+  font-family: 'Graphik';
+  font-weight: 600;
   src: url(/fonts/GraphikSemibold.otf);
 }

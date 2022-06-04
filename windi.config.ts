@@ -9,7 +9,7 @@ export default defineConfig({
   theme: {
     extend: {
       fontFamily: {
-        default: ['Graphik Regular', 'Segoe UI']
+        default: ['Graphik Regular', 'Segoe UI'],
       }
     }
   }
