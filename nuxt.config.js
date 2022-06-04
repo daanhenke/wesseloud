@@ -14,6 +14,10 @@ export default {
     ]
   },
 
+  router: {
+    base: '/wesseloud/'
+  },
+
   css: [
   ],
 
