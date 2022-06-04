@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+
+</defs>
+<symbol id="i-ellipsehero" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37.255" cy="36.9" r="36.407" fill="#5CDA42"/></symbol>
+<symbol id="i-plushero" viewBox="0 0 75 74" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M71.52 16.572A9.61 9.61 0 0057.928 2.98L37.54 23.368 17.153 2.98a9.61 9.61 0 00-13.592 0 9.61 9.61 0 000 13.592L23.948 36.96 3.561 57.347A9.61 9.61 0 0017.153 70.94L37.54 50.552l20.388 20.387A9.61 9.61 0 1071.52 57.348L51.132 36.96 71.52 16.572z" fill="#FF5925"/></symbol>
+<symbol id="i-rectanglebluehero" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#3E83FB" d="M.762.176h101.131v101.131H.762z"/></symbol>
+<symbol id="i-rectanglegreenhero" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#5CDA42" d="M.631.307h101.131v101.131H.631z"/></symbol>
+<symbol id="i-rectangleorangehero" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#FF5925" d="M.762.307h101.131v101.131H.762z"/></symbol>
+<symbol id="i-trianglehero" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M51.196.177l50.565 101.13H.631L51.196.177z" fill="#E025FF"/></symbol>
+</svg>
