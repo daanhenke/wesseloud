@@ -1,6 +1,7 @@
 html, body, #__nuxt, #__layout, .layout { @apply flex flex-col min-h-screen; }
-.layout { @apply bg-dark-300 text-white font-default; }
+.layout { @apply font-default; }
 
+/* Non Google Fonts */
 @font-face {
   font-family: 'Graphik Regular';
   src: url(/fonts/GraphikRegular.otf);
