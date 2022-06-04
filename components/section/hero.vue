@@ -22,12 +22,12 @@
 .hero-section { @apply flex flex-col md:flex-row items-center bg-light-500 min-h-128 p-12; }
 .hero-section > * { @apply w-1/2; }
 .animation-container { @apply flex flex-grow justify-center; }
-.animation { @apply relative w-72 h-72 <sm:w-48 <sm:h-48; }
-.animation > * { @apply absolute w-24 h-24 <sm:w-16 <sm:h-16; }
+.animation { @apply relative md:w-72 md:h-72 sm:w-60 sm:h-60 w-36 h-36; }
+.animation > * { @apply absolute md:w-24 md:h-24 sm:w-20 sm:h-20 w-12 h-12; }
 
 .animation[data-hidden="true"] svg { @apply hidden; }
-svg.smaller { @apply w-16 h-16 <sm:w-11 <sm:h-11; }
-svg.medium { @apply pt-6 px-3; }
+svg.smaller { @apply md:w-16 md:h-16 sm:w-13 sm:h-13 w-8 h-8; }
+svg.medium { @apply sm:pt-6 sm:px-3 pt-3 px-1; }
 
 .text > h1 { @apply text-3xl; }
 </style>
