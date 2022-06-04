@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'user-journeys'
+    label: 'User Journeys'
+    folder: 'content/user-journeys'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
