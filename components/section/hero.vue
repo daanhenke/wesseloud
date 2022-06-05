@@ -19,8 +19,8 @@
 </template>
 
 <style scoped>
-.hero-section { @apply flex flex-col md:flex-row items-center bg-light-500 min-h-128 p-12; }
-.hero-section > * { @apply w-1/2; }
+.hero-section { @apply w-full flex flex-col md:flex-row items-center bg-light-500 p-12; }
+.hero-section > * { @apply w-1/2 <md:py-8; }
 .animation-container { @apply flex flex-grow justify-center; }
 .animation { @apply relative md:w-72 md:h-72 sm:w-60 sm:h-60 w-36 h-36; }
 .animation > * { @apply absolute md:w-24 md:h-24 sm:w-20 sm:h-20 w-12 h-12; }
