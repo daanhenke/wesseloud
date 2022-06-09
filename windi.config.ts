@@ -12,7 +12,10 @@ export default defineConfig({
         default: ['Graphik Regular', 'Segoe UI'],
       },
       colors: {
-        'primary': '#5CDA42'
+        'primary': '#5CDA42',
+        'secondary': '#3E83FB',
+        'third': '#FF5925',
+        'fourth': '#E025FF'
       }
     }
   }

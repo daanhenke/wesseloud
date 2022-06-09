@@ -42,10 +42,10 @@
 
 #nav-toggle:checked ~ .nav-container { @apply flex flex-col fixed top-0 right-0 w-full h-full; }
 #nav-toggle:checked ~ .nav-container ul { @apply h-1/4; }
-#nav-toggle:checked ~ .nav-container ul[data-i="0"] { @apply bg-green-500; }
-#nav-toggle:checked ~ .nav-container ul[data-i="1"] { @apply bg-blue-500; }
-#nav-toggle:checked ~ .nav-container ul[data-i="2"] { @apply bg-red-500; }
-#nav-toggle:checked ~ .nav-container ul[data-i="3"] { @apply bg-purple-500; }
+#nav-toggle:checked ~ .nav-container ul[data-i="0"] { @apply bg-primary; }
+#nav-toggle:checked ~ .nav-container ul[data-i="1"] { @apply bg-secondary; }
+#nav-toggle:checked ~ .nav-container ul[data-i="2"] { @apply bg-third; }
+#nav-toggle:checked ~ .nav-container ul[data-i="3"] { @apply bg-fourth; }
 </style>
 
 <script>
