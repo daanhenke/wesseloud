@@ -12,7 +12,7 @@
 <style scoped>
   .page { @apply flex flex-col; }
 
-  .work { @apply flex flex-col items-center overflow-y-hidden pt-12; }
+  .work { @apply flex flex-col items-center overflow-hidden pt-12; }
 
   .section-slanted[data-index="0"], .section-slanted[data-index="0"]::after { @apply bg-red-500; }
   .section-slanted[data-index="1"], .section-slanted[data-index="1"]::after { @apply bg-green-500; }

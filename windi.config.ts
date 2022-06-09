@@ -10,6 +10,9 @@ export default defineConfig({
     extend: {
       fontFamily: {
         default: ['Graphik Regular', 'Segoe UI'],
+      },
+      colors: {
+        'primary': '#5CDA42'
       }
     }
   }

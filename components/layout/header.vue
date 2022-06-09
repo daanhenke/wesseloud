@@ -12,8 +12,8 @@
         <label ref="closeLabel" @click="onCloseNav" class="nav-hamburger-close" for="nav-toggle">
           sluit hamburgert
         </label>
-        <ul v-for="section, index in sections" :key="section" :data-i="index" class="nav-first">
-          <li v-for="item in section" :key="item.path">
+        <ul v-for="section, index in sections" :key="index" :data-i="index" class="nav-first">
+          <li class="link" v-for="item in section" :key="item.path">
             <nuxt-link :to="item.path">
               {{ item.name }}
             </nuxt-link>
@@ -25,10 +25,14 @@
 </template>
 
 <style scoped>
-.header { @apply sticky top-0 p-4 flex justify-between; }
+.header { @apply bg-white z-50 sticky top-0 py-4 px-8 md:px-16 flex justify-between text-xl; }
 .nav-hamburger, .nav-hamburger-close { @apply md:hidden; }
 .nav-hamburger-close { @apply absolute right-4 top-4; }
 .nav-container { @apply hidden md:flex md:flex-row items-end; }
+.nav-container > ul { @apply flex flex-col md:flex-row }
+
+.nuxt-link-exact-active { @apply text-primary; }
+.link { @apply pl-8; }
 
 #nav-toggle { @apply hidden; }
 
@@ -47,25 +51,11 @@
 import anime from 'animejs'
 
 export default {
-  props: {
-    items: {
-      default: () =>
-      {
-        const mk = (i, name = 'Test') => { return {name, index: i, path: '/'} }
-        return [
-          mk(0, 'Home'),
-          mk(1, 'Work'),
-          mk(2, 'About'),
-          mk(3, 'Extra')
-        ]
-      }
-    }
-  },
   computed: {
     sections() {
       const result = []
 
-      this.items.forEach(item =>
+      this.navItems.forEach(item =>
       {
         if (! item.hasOwnProperty('index')) item.index = 0
 
@@ -73,12 +63,15 @@ export default {
         result[item.index].push(item)
       })
 
+      while (result.length < 4) result.push([])
+
       return result
     }
   },
   data() {
     return {
-      navAnimation: null
+      navAnimation: null,
+      navItems: []
     }
   },
   methods: {
@@ -129,6 +122,11 @@ export default {
       this.navAnimation.reverse()
       this.navAnimation.play()
     }
+  },
+  async fetch() {
+    const navData = await this.$content('layout/navigation').fetch()
+
+    this.navItems = navData.header
   }
 }
 </script>

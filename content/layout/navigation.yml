@@ -1,0 +1,20 @@
+header:
+  - name: 'Home'
+    path: '/'
+  - name: 'Work'
+    path: '/#work'
+  - name: 'About'
+    path: '/about'
+footer:
+  left:
+    - name: 'Foo'
+      path: '/'
+    - name: 'bar'
+      path: '/'
+  right:
+    - name: 'Instagram'
+      path: 'nowork'
+    - name: 'E-mail me'
+      path: 'mailto:wessel.email@gmail.com'
+    - name: 'Call me'
+      path: 'todo'

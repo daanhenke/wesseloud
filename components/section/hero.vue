@@ -12,8 +12,8 @@
       </div>
     </div>
     <div class="text">
-      <h1>Fakka G</h1>
-      <p>Lorem ipsum dipsum</p>
+      <h1>Hello!</h1>
+      <p>I'm Wessel, a<br>UX/UI designer<br>based in Amsterdam</p>
     </div>
   </div>
 </template>
@@ -29,7 +29,8 @@
 svg.smaller { @apply md:w-16 md:h-16 sm:w-13 sm:h-13 w-8 h-8; }
 svg.medium { @apply sm:pt-6 sm:px-3 pt-3 px-1; }
 
-.text > h1 { @apply text-3xl; }
+.text { @apply font-semibold text-2xl md:text-4xl w-2/3 }
+.text > h1 { @apply text-5xl md:text-6xl text-primary pb-4 md:pb-8; }
 </style>
 
 <script>
