@@ -14,10 +14,10 @@
 
   .work { @apply flex flex-col items-center overflow-hidden pt-12; }
 
-  .section-slanted[data-index="0"], .section-slanted[data-index="0"]::after { @apply bg-red-500; }
-  .section-slanted[data-index="1"], .section-slanted[data-index="1"]::after { @apply bg-green-500; }
-  .section-slanted[data-index="2"], .section-slanted[data-index="2"]::after { @apply bg-blue-500; }
-  .section-slanted[data-index="3"], .section-slanted[data-index="3"]::after { @apply bg-purple-500; }
+  .section-slanted[data-index="0"], .section-slanted[data-index="0"]::after { @apply bg-primary; }
+  .section-slanted[data-index="1"], .section-slanted[data-index="1"]::after { @apply bg-secondary; }
+  .section-slanted[data-index="2"], .section-slanted[data-index="2"]::after { @apply bg-third; }
+  .section-slanted[data-index="3"], .section-slanted[data-index="3"]::after { @apply bg-fourth; }
   .section-slanted[data-index="0"] { --z: 3; }
   .section-slanted[data-index="1"] { --z: 2; }
   .section-slanted[data-index="2"] { --z: 1; }
