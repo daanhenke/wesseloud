@@ -33,6 +33,7 @@
 
 .nuxt-link-exact-active { @apply text-primary; }
 .link { @apply pl-8; }
+.header-brand { @apply font-semibold }
 
 #nav-toggle { @apply hidden; }
 
